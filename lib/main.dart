@@ -6,10 +6,10 @@ import 'package:students/model/student.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // ✅ Initialize Hive for Flutter
+  // Initialize Hive for Flutter
   await Hive.initFlutter();
 
-  // ✅ Register adapter and open the box
+  // Register adapter and open the box
   Hive.registerAdapter(StudentAdapter());
   await Hive.openBox<Student>('students');
 
