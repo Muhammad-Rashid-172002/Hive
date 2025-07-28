@@ -120,7 +120,10 @@ class _StudentListScreenState extends State<StudentListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Student List'),
+        title: const Text(
+          'Student List',
+          style: TextStyle(color: Colors.white),
+        ),
         backgroundColor: Colors.grey,
       ),
       body: ValueListenableBuilder(
